@@ -16,7 +16,13 @@ We thought making a game is a good project to apply knowledge that we have learn
 
 
 # Project Video
+
 [![video](https://img.youtube.com/vi/dIqHDlAxGdw/0.jpg)](https://youtu.be/dIqHDlAxGdw)
+
+
+# Project Report
+
+[PDF](https://nbviewer.jupyter.org/github/habijung/room-escape-game/blob/main/Team_2_Final%20Report.pdf)
 
 
 ---
