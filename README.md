@@ -22,7 +22,7 @@ We thought making a game is a good project to apply knowledge that we have learn
 
 # Project Report
 
-[PDF](https://nbviewer.jupyter.org/github/habijung/room-escape-game/blob/main/Team_2_Final%20Report.pdf)
+[PDF](https://nbviewer.jupyter.org/github/habijung/room-escape-game/blob/main/Team-2-Final-Report.pdf)
 
 
 ---
