@@ -4,10 +4,10 @@
 #include <string>
 #include <vector>
 #include <windows.h>
-#include <GL/glew.h>
-#include <GL/glut.h>
-#include <GL/freeglut.h>
-#include "glm/glm.hpp"
+#include "GL/glew.h"
+#include "GL/glut.h"
+#include "GL/freeglut.h"
+#include "../glm/glm.hpp"
 using namespace std;
 using namespace glm;
 
@@ -672,7 +672,7 @@ void reshape(int w, int h)
 /* OBJ control function */
 void constructOBJ(string fname, obj_t* object, GLuint ID)
 {
-	string fpath = "../object/" + fname + ".obj";
+	string fpath = "resource/object/" + fname + ".obj";
 	object->fname = fname;
 	object->fpath = fpath.c_str();
 	object->ID = ID;
@@ -1287,11 +1287,11 @@ void loadBMP(uchar4 **dst, int *width, int *height, const char *name)
 
 void loadAllBMPs(void)
 {
-	loadBMP(&dst[0], &imageWidth[0], &imageHeight[0], "../numeric_keypad.bmp");
+	loadBMP(&dst[0], &imageWidth[0], &imageHeight[0], "resource/img/numeric_keypad.bmp");
 	glPixelStorei(GL_UNPACK_ALIGNMENT, 1);
 	glGenTextures(1, &imageTex[0]);
 
-	loadBMP(&dst[1], &imageWidth[1], &imageHeight[1], "../placard.bmp");
+	loadBMP(&dst[1], &imageWidth[1], &imageHeight[1], "resource/img/placard.bmp");
 	glPixelStorei(GL_UNPACK_ALIGNMENT, 1);
 	glGenTextures(1, &imageTex[1]);
 }

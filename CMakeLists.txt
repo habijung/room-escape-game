@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.0)
 project(room-escape)
 
+add_subdirectory(src)
+
 set(EXTERNAL_LINK_LIBS 
         freeglut.lib
         glew32.lib
@@ -14,11 +16,7 @@ include_directories(${CMAKE_SOURCE_DIR}/glew/inc)
 link_directories(${CMAKE_SOURCE_DIR}/freeglut/lib)
 link_directories(${CMAKE_SOURCE_DIR}/glew/lib)
 
-# Collect source files
-file(GLOB SRC *.cpp)
-file(GLOB HDR *.h)
-
-add_executable(${PROJECT_NAME} main.cpp)
+add_executable(${PROJECT_NAME} src/main.cpp)
 
 # Target link libraries
 target_link_libraries(${PROJECT_NAME} ${EXTERNAL_LINK_LIBS})
@@ -29,9 +27,3 @@ file(GLOB_RECURSE DLLS
         ${CMAKE_SOURCE_DIR}/glew/*.dll
 )
 file(COPY ${DLLS} DESTINATION ${CMAKE_BINARY_DIR}/Debug)
-
-file(GLOB_RECURSE OBJECTS ${CMAKE_SOURCE_DIR}/object/*.obj)
-file(COPY ${OBJECTS} DESTINATION ${CMAKE_BINARY_DIR}/object)
-
-file(GLOB_RECURSE IMAGES ${CMAKE_SOURCE_DIR}/*.bmp)
-file(COPY ${IMAGES} DESTINATION ${CMAKE_BINARY_DIR})
