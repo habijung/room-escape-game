@@ -44,8 +44,12 @@ Thus, the player has to explore the room and examine the objects.
 
 ### Prerequisites
 
-- **CMake** (>= `3.0`)
-- **Visual Studio 2022** (with **Desktop development with C++**)
+| Name          | Version     |
+|:--------------|:------------|
+| OpenGL        | 2.0         |
+| CMake         | 3.5         |
+| Visual Studio | 2022        |
+| Windows SDK   | 10.0.22621  |
 
 ### Build
 
@@ -62,4 +66,4 @@ sh build.sh
 ```
 
 ---
-**Last Updated:** 2024.07.06
+**Last Updated:** 2024.07.16
