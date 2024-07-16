@@ -44,12 +44,12 @@ Thus, the player has to explore the room and examine the objects.
 
 ### Prerequisites
 
-| Name          | Version     |
-|:--------------|:------------|
-| OpenGL        | 2.0         |
-| CMake         | 3.5         |
-| Visual Studio | 2022        |
-| Windows SDK   | 10.0.22621  |
+| Name               | Version    |
+|:-------------------|:-----------|
+| OpenGL             | 2.0        |
+| CMake              | 3.29.2     |
+| Visual Studio 2022 | 17.7.3     |
+| Windows SDK        | 10.0.22621 |
 
 ### Build
 
@@ -59,6 +59,12 @@ Thus, the player has to explore the room and examine the objects.
 sh build.sh
 ```
 
+**Use command line**
+```shell
+cmake -S . -B cmake-build -G "Visual Studio 17 2022" -D CMAKE_BUILD_TYPE="Debug"
+cmake --build cmake-build -j 10
+```
+
 ### Run
 
 ```shell
@@ -66,4 +72,4 @@ sh build.sh
 ```
 
 ---
-**Last Updated:** 2024.07.16
+**Last Updated:** 24.07.16
