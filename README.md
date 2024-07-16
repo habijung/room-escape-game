@@ -62,7 +62,7 @@ sh build.sh
 ### Run
 
 ```shell
-./cmake-build/Debug/room-escale.exe
+./cmake-build/Debug/room-escape.exe
 ```
 
 ---
